@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8">
+<title>个人职业发展路径</title>
+<script type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="bootstrap3.3.7/css/bootstrap.min.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap3.3.7/js/bootstrap.min.js"></script>
+<script src="js/echarts.min.js"></script>
+
+<link href="css/test.css" rel="stylesheet" type="text/css" />
+
+<script>
+    function changebudget()
+    {
+        var money; //money变量，用来存储用户输入的设定。
+        money = prompt("请输入您的目标") ;
+        x=document.getElementById("num_budget"); 
+        x.innerHTML=money; 
+    }
+</script>
+
+<script>       //设置登录页面弹出效果  
+jQuery(document).ready(function($){
+    $('.t1').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form1').slideDown(200);  
+    })
+    $('.arrow1').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form2').slideDown(200);  
+    })
+    $('.advise1').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form3').slideDown(200);  
+    })
+    $('.target2').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form4').slideDown(200);  
+    })    
+    $('.target3').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form5').slideDown(200);  
+    })
+    $('.target4').click(function(){  
+        $('.mask').fadeIn(100);  
+        $('.form6').slideDown(200);  
+    })                  
+    $('.x').click(function(){  
+        $('.mask').fadeOut(100);  
+        $('.form1').slideUp(200);
+        $('.form2').slideUp(200);  
+    })
+    $('.x1').click(function(){  
+        $('.mask').fadeOut(100);   
+        $('.form3').slideUp(200);  
+    })
+    $('.x4').click(function(){  
+        $('.mask').fadeOut(100);   
+        $('.form4').slideUp(200);  
+    })
+    $('.x5').click(function(){  
+        $('.mask').fadeOut(100);   
+        $('.form5').slideUp(200);  
+    })                
+    $('.x6').click(function(){  
+        $('.mask').fadeOut(100);   
+        $('.form6').slideUp(200);  
+    })  
+})
+
+</script>  
+
+  
+</head>
+
+<body style="background-image:url();background-position:center; background-repeat:repeat-y">
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">皇家骑士</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li >
+                            <a href="file:///E:/web/training/index.html"><span class="glyphicon glyphicon-star"></span> 首页</a>
+                        </li>    
+                        <li >
+                            <a href="file:///E:/web/training/inform.html"><span class="glyphicon glyphicon-user"></span> 个人信息</a>
+                        </li>
+                        <li>
+                            <a href="file:///E:/web/training/study.html"><span class="glyphicon glyphicon-stats"></span> 课程学习</a>
+                        </li>
+                        <li>
+                            <a href="file:///E:/web/training/skill.html"><span class="glyphicon glyphicon-pencil"></span> 能力测评</a>
+                        </li>
+                        <li class="active">
+                            <a href="file:///E:/web/training/index2.html"><span class="glyphicon glyphicon-list-alt"></span> 职业路径</a>
+                        </li> 
+                        <li >
+                            <a href="file:///E:/web/training/test2.html" style="background-color: orange;"><span class="glyphicon glyphicon-asterisk"></span> 企业管理</a>
+                        </li>           
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="file:///E:/web/training/index.html"> 返回</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="inner">
+            <div class="dart">
+                <span class="label label-primary">个人目标：</span>   <span id ="num_budget" class="label label-success">技术总监</span> <span onclick="changebudget()" class="label label-warning">重新设置</span>
+            </div>
+            <div class="tab">
+                <span class="label label-info">查看内容：</span>  <a href="file:///E:/web/training/test.html"><span class="label label-success">个人设定</span></a>
+            </div>
+            <div class="circle1">
+                <div class="target1">
+                    <a class="t1" href="javascript:;">JAVA程序员</a>  
+                </div>
+            </div>
+            <a href="javascript:;" class="arrow1"></a>  
+            <div class="circle2">
+                <div class="target2">
+                    <a class="nav-login" href="javascript:;">JAVA EE初级<br>软件工程师<br><h5 style="padding-left: 5px;">（当前处于）</h5></a>  
+                </div>
+            </div>
+            <a href="" class="arrow2"></a>  
+            <div class="circle3">
+                <div class="target3">
+                    <a class="nav-login" href="javascript:;">JAVA EE高级<br>软件工程师</a>  
+                </div>
+            </div>
+            <a href="" class="arrow3"></a>  
+            <div class="circle4">
+                <div class="target4">
+                    <a class="nav-login" href="javascript:;">JAVA EE<br>系统架构师</a>  
+                </div>
+            </div>
+            <a href="" class="arrow4"></a>  
+            <div class="circle5">
+                <div class="target5">
+                    <a class="nav-login" href="javascript:;">技术总监</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footfont">
+    © 2017 Bootstrap Training Skills System. - via team 皇家骑士
+    </div>
+</div>
+
+<div class="form1">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x close">×</a>  
+    <h1 style="padding-left: 20px;">岗位要求：</h1>  
+    </div>  
+    <div style="padding-left: 40px;font-size:20px;">  
+        1、比较熟练的掌握java语言<br>
+        2、学习基础的web开发<br>
+        3、学习开发框架
+    </div>  
+</div>
+<div class="form2">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x close">×</a>  
+    <h1 style="padding-left: 20px;">测评结果：</h1>  
+    </div>  
+    <div style="padding-left: 40px;font-size:20px;">  
+       1.编码能力：20（距下一岗位欠缺 30） <a href="javascript:;" class="advise1"><span class="glyphicon glyphicon-search"></span></a><br>
+       2.创造力：50（距下一岗位欠缺 10） <a href="javascript:;"><span class="glyphicon glyphicon-search"></span></a>
+    </div>  
+</div>
+<div class="form3">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x1 close">×</a>  
+    <h1 style="padding-left: 20px;">推荐：</h1>  
+    </div>  
+    <div style="padding-left: 40px;font-size:20px;">  
+        1.学习《数据结构》课程<br>
+        2.参加编码初级培训班
+    </div>  
+</div> 
+<div class="form4">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x4 close" style="padding-right: 10px;">×</a>  
+    <h1 style="padding-left: 20px;">岗位要求：</h1>  
+    </div>  
+    <div style="padding-left: 40px;font-size:20px;">  
+    1、熟悉Spring、SpringMVC、Mybatis、Spring Boot等其中一个或者多个领域<br>
+    2、对常见的设计模式有一定的理解<br>
+    3、有linux经验或者有使用mysql经验<br>
+    4、有安全领域经验<br>
+    </div>  
+</div>       
+<div class="form5">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x5 close" style="padding-right: 10px;">×</a>  
+    <h1 style="padding-left: 20px;">岗位要求：</h1>  
+    </div>  
+    <div style="padding-left: 30px;padding-right:10px;font-size:16px;">  
+    1. 至少2年以上Java相关开发经验，有大型互联网公司或大型IT企业开发经验；<br>
+    2. 熟悉Spring、Spring MVC、Spring Boot、MyBatis 等开源框架及其相关技术体系，深入理解其运行原理，具有全栈开发经验；<br>
+    3. 具备扎实的数据库基础，精通MySQL，Redis，Hbase等并拥有实际项目经验；<br>
+    4. 熟悉分布式编程技术，RPC框架，MQ消息中间件，Linux等；<br>
+    5. 具有出色的抽象设计能力，思路清晰，善于思考，能独立分析和解决问题，具备良好的项目管理能力；<br>
+    6. 技术视野开阔，对技术有热情，学习能力好；<br>
+    7. 性格开朗，善于沟通；<br>
+    8. 有大型网站架构经验；有供应链管理经验；<br>
+    </div>  
+</div>
+<div class="form6">  
+    <div class="login-header">  
+    <a href="javascript:;" title="关闭" class="x6 close" style="padding-right: 10px;">×</a>  
+    <h1 style="padding-left: 20px;">岗位要求：</h1>  
+    </div>  
+    <div style="padding-left: 30px;padding-right:10px;font-size:15px;">  
+    1.计算机相关专业本科毕业，4年Java开发；精通activiti工作流引擎，至少1年以上的activiti工作流项目经验；<br>
+    2.基于分布式数据处理(greenplum/hadoop)平台的实际开发应用和平台优化，深刻理解分布式数据处理平台的原理；<br>
+    3.熟悉java、python、sql、hive、spark等开发语言;<br>
+    4.基于linux/unix平台进行shell、python的常用脚本开发。<br>
+    5.熟悉JSP/Servlet、JavaScript/ExtJs/EasyUI、Jquery等WEB技术，熟悉SpringMVC，Struts，Struts2，Hibernate4，Mybatis等主流的开源框架。<br>
+    6.至少熟练使用一种数据库（Oracle、MySQL），拥有较强的数据库设计及性能优化能力。<br>
+    7.熟悉Tomcat、Jboss等Web服务器，且具有Web服务器集群部署经验，Linux环境下的优先考虑。<br>
+    8.熟悉应用Git、SVN、VSS、Junit、Maven等工具。 <br>
+    </div>  
+</div>  
+<div class="mask"></div>  
+
+</body>
+</html>
